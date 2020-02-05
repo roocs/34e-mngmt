@@ -13,19 +13,19 @@ This particular investigation focused only on the problematic characteristics th
 ## Results
 
 The results from this investigation showed that none of the recorded problems were in relation to the global attributes. 
-However, there were some common problems of note in the CMIP5 and CMIP6 datasets. 
+However, there were some common problems in each of the CMIP5 and CMIP6 fixes. 
 
-In the CMIP5 datasets a common problem was that the name of the unit of the main variable was incorrect and/or the data was in the incorrect unit, so the data had to be scaled and the name of the unit changed. As well as this, for some variables in some models the coordinate points varied between files in the dataset i.e. between time ranges. This was fixed by rounding the coordinates.  
+In the CMIP5 datasets a common problem was that the name of the unit of the main variable was incorrect and/or the data was in the incorrect unit, so the data had to be scaled and the name of the unit changed. In some other cases the standard name of the main variable was incorrect and had to be changed.  
 
-A common issue was that a fill value had been used for missing data and this had been corrected to a mask on these values by the ESMValTool. Finally, a noticeable issue was that the incorrect standard name of the main variable was incorrect and had to be renamed. 
+Another common issue was that a fill value had been used for missing data. This had been corrected to a mask on these values by the ESMValTool. As well as this, for some variables in some models the coordinate points varied between files in the dataset i.e. between time ranges. This was fixed by rounding the coordinates.
 
 In the CMIP6 datasets the main problem that was captured was a missing coordinate. While the coordinate was not always the same one, for example some variables were missing a height coordinate and others a typesea coordinate, the majority were missing a height coordinate (either 2m or 10m).
 
-There were other issues that were captured in the ESMValTool, all the issues captured are summarised in the table below along with the proposed approach. 
+There were other issues that were captured in the ESMValTool. All the issues are summarised in the table below along with the proposed approach to spotting them. 
 
 ## Analysis and proposed approach
 
-More detail is provided in the table below, however, the characteristics to extract as found from this investigation are as follows:
+More detail is provided in the table below, however, the characteristics to extract as found from this investigation are:
 
 - Max and min of variable data
 - Name of units of main variable
@@ -44,7 +44,7 @@ Further suggestions following on from this are:
 - Shape of main variable
 
 
-The table below summaries the problems that were captured. It then follows on by suggesting what characteristic to extract and explaining how this would be used to test for the problem. Finally, the last column shows how to extract this characteristic using xarray, where 'ds' corresponds to the dataset under investigation and 'var' corresponds to the main variable of the dataset. 
+The table below summaries the problems that were captured. It then suggests which characteristic to extract and explains how this would be used to test for the problem. Finally, the last column shows how to extract this characteristic using xarray, where 'ds' corresponds to the dataset under investigation and 'var' corresponds to the main variable of the dataset. 
 
 | Problem  | Characteristic to extract | How to check for problem | How to extract using xarray |
 |---|---|---|---|
