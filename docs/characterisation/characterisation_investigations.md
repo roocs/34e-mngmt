@@ -25,6 +25,25 @@ There were other issues that were captured in the ESMValTool, all the issues cap
 
 ## Analysis and proposed approach
 
+More detail is provided in the table below, however, the characteristics to extract as found from this investigation are as follows:
+
+- Max and min of variable data
+- Name of units of main variable
+- Standard name of main variable
+- Long name of main variable
+- List of the variables in the dataset 
+- List of coordinates in the dataset
+- Values of coordinates (latitude, longitude, time and others)
+- Fill value of the main variable
+- Long name of time variable
+
+Further suggestions following on from this are:
+
+- Long name / standard name of all variables
+- Rank of main variable
+- Shape of main variable
+
+
 The table below summaries the problems that were captured. It then follows on by suggesting what characeristic to extract and explaining how this would be used to test for the problem. Finally, the final column shows how to extract this characteristic using xarray, where 'ds' corresponds to the dataset under investigation and 'var' corresponds to the mian variable of the dataset. 
 
 | Problem  | Characteristic to extract | How to check for problem | How to extract using xarray |
@@ -51,7 +70,7 @@ The table below summaries the problems that were captured. It then follows on by
 | Latitude values greater than 90 and less than -90  | Values of latitude | check the values are in the correct range  | ds.lat.values |
 | Incorrect variable name for lat and lon | List of variables in dataset | Check for existence of lat/lon and latitude/longitude in list | ds.variables |
 | Missing lat bounds and lon bounds | List of variables in dataset | Check for existence of variables in the list | ds.variables |
-| Missing long name for time coordinate | long name of time variable | Check for the existence of the name | ds.time.long_name |
+| Missing long name for time coordinate | Long name of time variable | Check for the existence of the name | ds.time.long_name |
 | Incorrect units for parent time |  |  |  |
   
-This investigation also suggests other characterisitcs to collect e.g. long name and standard name of all variables.   
+   
