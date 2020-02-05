@@ -44,7 +44,7 @@ Further suggestions following on from this are:
 - Shape of main variable
 
 
-The table below summaries the problems that were captured. It then follows on by suggesting what characeristic to extract and explaining how this would be used to test for the problem. Finally, the final column shows how to extract this characteristic using xarray, where 'ds' corresponds to the dataset under investigation and 'var' corresponds to the mian variable of the dataset. 
+The table below summaries the problems that were captured. It then follows on by suggesting what characeristic to extract and explaining how this would be used to test for the problem. Finally, the last column shows how to extract this characteristic using xarray, where 'ds' corresponds to the dataset under investigation and 'var' corresponds to the mainn variable of the dataset. 
 
 | Problem  | Characteristic to extract | How to check for problem | How to extract using xarray |
 |---|---|---|---|
