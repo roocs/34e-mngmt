@@ -15,7 +15,7 @@ This particular investigation focused only on the problematic characteristics th
 The results from this investigation showed that none of the recorded problems were in relation to the global attributes. 
 However, there were some common problems of note in the CMIP5 and CMIP6 datasets. 
 
-In the CMIP5 datasets a common problem was that the name of the unit of the main variable was incorrect and/or the data was in the incorrect unit, so the data had to be scaled and the name of the unit changed. As well as this, for some variables in some models the coordinate points varied between files in the dataset i.e. between time ranges. This was fixed by  
+In the CMIP5 datasets a common problem was that the name of the unit of the main variable was incorrect and/or the data was in the incorrect unit, so the data had to be scaled and the name of the unit changed. As well as this, for some variables in some models the coordinate points varied between files in the dataset i.e. between time ranges. This was fixed by rounding the coordinates.  
 
 A common issue was that a fill value had been used for missing data and this had been corrected to a mask on these values by the ESMValTool. Finally, a noticeable issue was that the incorrect standard name of the main variable was incorrect and had to be renamed. 
 
