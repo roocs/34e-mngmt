@@ -2,9 +2,9 @@
 
 ## Overview
 
-The initial part of the investigation into characterisation of datasets involved looking at the problems captured by the ESMValTool. The idea of this being that we could capture all the characterisitcs in datasets in CMIP5, CMIP6 and CORDEX that are responsible for causing errors. The final aim of the investigation was to have a list of all characteristics that should be stored in our characterisation store.
+The initial part of the investigation into characterisation of datasets involved looking at the problems captured by the ESMValTool. The idea of this being that we could capture all the characteristics in datasets in CMIP5, CMIP6 and CORDEX that are responsible for causing errors. The final aim of the investigation was to have a list of all characteristics that should be stored in our characterisation store.
 
-These characteristics were found by recording the problem, the fix and then which part of the dataset the problem corrsponded to e.g. coordinate, global attribute, variable attribute or the data.
+These characteristics were found by recording the problem, the fix and then which part of the dataset the problem corresponded to e.g. coordinate, global attribute, variable attribute or the data.
 
 ## Scope of investigation
 
@@ -19,7 +19,7 @@ In the CMIP5 datasets a common problem was that the name of the unit of the main
 
 A common issue was that a fill value had been used for missing data and this had been corrected to a mask on these values by the ESMValTool. Finally, a noticeable issue was that the incorrect standard name of the main variable was incorrect and had to be renamed. 
 
-In the CMIP6 datasets the main problem that was captured was a missing coordinate. While the coordinate was not always the same one, for example some variables were misisng a height coordinate and others a typesea coordinate, the majority were missing a height coordinate (either 2m or 10m).
+In the CMIP6 datasets the main problem that was captured was a missing coordinate. While the coordinate was not always the same one, for example some variables were missing a height coordinate and others a typesea coordinate, the majority were missing a height coordinate (either 2m or 10m).
 
 There were other issues that were captured in the ESMValTool, all the issues captured are summarised in the table below along with the proposed approach. 
 
@@ -44,7 +44,7 @@ Further suggestions following on from this are:
 - Shape of main variable
 
 
-The table below summaries the problems that were captured. It then follows on by suggesting what characeristic to extract and explaining how this would be used to test for the problem. Finally, the last column shows how to extract this characteristic using xarray, where 'ds' corresponds to the dataset under investigation and 'var' corresponds to the mainn variable of the dataset. 
+The table below summaries the problems that were captured. It then follows on by suggesting what characteristic to extract and explaining how this would be used to test for the problem. Finally, the last column shows how to extract this characteristic using xarray, where 'ds' corresponds to the dataset under investigation and 'var' corresponds to the main variable of the dataset. 
 
 | Problem  | Characteristic to extract | How to check for problem | How to extract using xarray |
 |---|---|---|---|
