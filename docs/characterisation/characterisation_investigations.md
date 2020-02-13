@@ -42,6 +42,8 @@ Further suggestions following on from this are:
 - Long name / standard name of all variables
 - Rank of main variable
 - Shape of main variable
+- Start and end date
+- Length of time axis
 
 
 The table below summarises the problems that were captured. It then suggests which characteristic to extract and explains how this would be used to test for the problem. Finally, the last column shows how to extract this characteristic using xarray, where 'ds' corresponds to the dataset under investigation and 'var' corresponds to the main variable of the dataset. 
