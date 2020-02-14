@@ -55,7 +55,7 @@ The table below summarises the problems that were captured. It then suggests whi
 | Name of units incorrect | Name of units of main variable | Check name of units of main variable against that described in MIP tables | ds.var.units |
 | Bad standard name | Standard name of main variable | Check standard name against that described in MIP tables | ds.var.standard_name |
 | Bad long name | Long name of main variable | Check long name against that described in MIP tables | ds.var.long_name |
-| Extra variable preventing cube concatenation | List of variables in dataset | Check for existence of variable in list | ds.variables |
+| Extra variable preventing cube concatenation | List of variables in dataset | Check for existence of variable in list | ds.data_vars |
 | Air pressure coordinate has incorrect name (AR5PL35) | List of coordinates in dataset | Check for existence of coordinate in list | ds.coords |
 | Missing scalar dimension | List of coordinates in dataset | Check for existence of coordinate in list  | ds.coords |
 | Missing depth coordinate | List of coordinates in dataset | Check for existence of coordinate in list  | ds.coords |
